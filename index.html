@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3 class="score">Score :</h3>
+        <h3>HighScore : <span class="high-score"></span></h3>
+        <h3 class="waktu">Waktu : </h3>
+        <form class="form">
+            <select name="target" id="target">
+                <option value="diksyen">Pukul Diskyen</option>
+                <option value="tikus">Pukul Tikus</option>
+            </select>
+            <select name="level" id="level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button type="submit">Main</button>
+        </form>
+    </div>
+    <div class="area">
+        <div class="box">
+            <img src="img/tanah.png" alt="" class="ground">
+            <div class="hit-box" id="hit-1">
+                <img src="img/tikus.png" alt="" class="tikus">
+                <img src="img/diksyen.png" alt="" class="diksyen">
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/tanah.png" alt="" class="ground">
+            <div class="hit-box" id="hit-2">
+                <img src="img/tikus.png" alt="" class="tikus">
+                <img src="img/diksyen.png" alt="" class="diksyen">
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/tanah.png" alt="" class="ground">
+            <div class="hit-box" id="hit-3">
+                <img src="img/tikus.png" alt="" class="tikus">
+                <img src="img/diksyen.png" alt="" class="diksyen">
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/tanah.png" alt="" class="ground">
+            <div class="hit-box" id="hit-4">
+                <img src="img/tikus.png" alt="" class="tikus">
+                <img src="img/diksyen.png" alt="" class="diksyen">
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/tanah.png" alt="" class="ground">
+            <div class="hit-box" id="hit-5">
+                <img src="img/tikus.png" alt="" class="tikus">
+                <img src="img/diksyen.png" alt="" class="diksyen">
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/tanah.png" alt="" class="ground">
+            <div class="hit-box" id="hit-6">
+                <img src="img/tikus.png" alt="" class="tikus">
+                <img src="img/diksyen.png" alt="" class="diksyen">
+            </div>
+        </div>
+    </div>
+    <div class="score-zoom">
+        <p>score:</p>
+        <h1 class="score-zoom-value">0</h1>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
