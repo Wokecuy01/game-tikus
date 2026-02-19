@@ -41,7 +41,7 @@ area.addEventListener('click',(e)=>{
     circle.style.left = x + 'px'
     area.appendChild(circle)
 
-    setInterval(()=>{
+    setTimeout(()=>{
         circle.remove()
     },400)
 })
@@ -102,18 +102,19 @@ function startGame(){
        },500)
    
 
-    const hit = document.querySelectorAll('.hit-box');
-    hit.forEach(hitBox =>{
-            if(durasiWaktu > 0){
-        hitBox.addEventListener('click',()=>{
-            let hit = true
-         if(hit){ 
-            score++
-            hit = false
-         }
-            hitBox.style.height = '0px'
-            hit 
-            scoreElement.innerHTML = 'score : '+score
-        })
-}})
+   
  }
+ const hitBoxes = document.querySelectorAll('.hit-box');
+
+hitBoxes.forEach(hitBox => {
+    hitBox.addEventListener('click', () => {
+        if (durasiWaktu <= 0) return;
+
+        if (hitBox.style.height === '100px') {
+            score++;
+            scoreElement.innerHTML = 'Score : ' + score;
+            hitBox.style.height = '0px';
+        }
+    });
+});
+
